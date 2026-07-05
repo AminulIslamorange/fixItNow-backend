@@ -1,0 +1,9 @@
+model Review {
+  id          String   @id @default(uuid())
+  rating      Int
+  comment     String?
+  bookingId   String   @unique
+  createdAt   DateTime @default(now())
+
+  @@map("reviews")
+}
