@@ -4,12 +4,14 @@ import { NextFunction, Request, Response } from "express";
 
 
 import { JwtPayload } from "jsonwebtoken";
-import { Role } from "../../prisma/generated/prisma/enums";
+
 import { catchAsync } from "../utils/catchAsync";
 import { jwtUtils } from "../utils/jwt";
 
 import { prisma } from "../lib/prisma";
+import { Role } from "../../prisma/generated/prisma/enums";
 import config from "../config";
+
 
 
 // ==========================================

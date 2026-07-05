@@ -11,8 +11,3 @@ model Payment {
   @@map("payments")
 }
 
-enum PaymentStatus {
-  PENDING
-  COMPLETED
-  FAILED
-}

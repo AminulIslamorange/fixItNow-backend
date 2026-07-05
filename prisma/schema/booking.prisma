@@ -11,9 +11,3 @@ model Booking {
   @@map("bookings")
 }
 
-enum BookingStatus {
-  PENDING
-  ACCEPTED
-  COMPLETED
-  CANCELLED
-}
